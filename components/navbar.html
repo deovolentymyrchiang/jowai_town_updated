@@ -1,0 +1,98 @@
+<!-- Navbar -->
+<nav class="bg-primary p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-2xl font-bold">Jowai Town</h1>
+        <!-- Show this div only on small screens -->
+        <div class="flex md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- This div will be hidden on small screens -->
+        <div id="navbar-links" class="hidden md:flex space-x-4">
+            <a href="./index.html" class="navbar-link text-white hover:underline">Home</a>
+            <a href="tourist.html" class="navbar-link text-white hover:underline">Tourist Attractions</a>
+            <a href="festival.html" class="navbar-link text-white hover:underline">Festival</a>
+            <div class="relative inline-block text-left">
+                <button id="facilities-button"
+                    class="inline-flex justify-center w-full text-sm font-medium text-white hover:underline">
+                    Facilities
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="facilities-dropdown"
+                    class="absolute right-0 z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                    <div class="py-1">
+                        <a href="edu.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Educational
+                            Institutions</a>
+                        <a href="health.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Health
+                            Facilities</a>
+                        <a href="restuarant.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Restaurants</a>
+                        <a href="hotel.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hotels &
+                            Lodging</a>
+                    </div>
+                </div>
+            </div>
+            <a href="gallery.html" class="navbar-link text-white hover:underline">Gallery</a>
+            <a href="video.html" class="navbar-link text-white hover:underline">Video</a>
+            <a href="about.html" class="navbar-link text-white hover:underline">About</a>
+        </div>
+
+
+        <!-- Sidebar for small screens -->
+        <div id="sidebar" class="fixed inset-0 z-20 bg-gray-800 bg-opacity-75 hidden md:hidden">
+            <div class="bg-white w-64 h-full shadow-lg">
+                <div class="flex justify-end p-2">
+                    <button id="close-menu" class="text-gray-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col p-4">
+                    <a href="./index.html" class="py-2 text-gray-800 hover:bg-gray-200">Home</a>
+                    <a href="tourist.html" class="py-2 text-gray-800 hover:bg-gray-200">Tourist Attractions</a>
+                    <a href="festival.html" class="py-2 text-gray-800 hover:bg-gray-200">Festival</a>
+                    <div class="relative inline-block text-left">
+                        <button id="facilities-button-sidebar"
+                            class="w-full text-left py-2 text-gray-800 hover:bg-gray-200">
+                            Facilities
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="facilities-dropdown-sidebar"
+                            class="absolute left-0 z-10 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                            <div class="py-1">
+                                <a href="edu.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Educational
+                                    Institutions</a>
+                                <a href="health.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Health
+                                    Facilities</a>
+                                <a href="restuarant.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Restaurants</a>
+                                <a href="hotel.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hotels
+                                    &
+                                    Lodging</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="py-2 text-gray-800 hover:bg-gray-200">Gallery</a>
+                    <a href="video.html" class="py-2 text-gray-800 hover:bg-gray-200">Video</a>
+                    <a href="about.html" class="py-2 text-gray-800 hover:bg-gray-200">About</a>
+                </div>
+            </div>
+        </div>
+</nav>
+
+<style>
+    /* Add this to your CSS file */
+    .active-link {
+        color: lightgray;
+        /* Active link color set to gray */
+    }
+
+
+    .bg-primary {
+        background-color: #0b867c;
+    }
+</style>

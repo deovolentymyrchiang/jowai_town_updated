@@ -1,0 +1,14 @@
+  /* Custom background */
+  body {
+      background-image: url('../image/jowa.jpg');
+      /* Replace with your image URL */
+      background-size: cover;
+      /* Cover the entire area */
+      background-position: center;
+      /* Center the image */
+  }
+
+  /* Hide the dropdown by default */
+  .hidden {
+      display: none;
+  }

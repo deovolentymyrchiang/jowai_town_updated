@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jowai Town</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43ef81e877.js" crossorigin="anonymous"></script>
+
+    <style>
+        .header-container {
+            position: relative;
+            padding: 20px;
+            /* Add padding around the header */
+            background-color: #ffffff;
+            /* White background for the header */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            margin-bottom: 20px;
+            /* Space below the header */
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            background-color: #14b8a6;
+            color: white;
+            padding: 5px 10px;
+            font-size: 1.25rem;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 2;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #0d9488;
+        }
+
+
+        .title {
+            text-align: center;
+            /* Center align the title */
+            margin-bottom: 20px;
+            /* Space below the title */
+        }
+
+        .title h1 {
+            color: #14b8a6;
+            /* Title color */
+            font-size: 2.5rem;
+            /* Title font size */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        .box {
+            max-width: 600px;
+            /* Limit the width of the form */
+            margin: 0 auto;
+            /* Center the form horizontally */
+            background-color: white;
+            /* White background for the form */
+            padding: 30px;
+            /* Padding inside the form */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        .form-control {
+            width: 100%;
+            /* Full width of the input fields */
+            padding: 12px;
+            /* Padding inside inputs */
+            margin-bottom: 15px;
+            /* Space between inputs */
+            border: 1px solid #ddd;
+            /* Light border */
+            border-radius: 5px;
+            /* Rounded corners for inputs */
+            font-size: 1rem;
+            /* Font size for inputs */
+            transition: border-color 0.3s;
+            /* Transition for border color */
+        }
+
+        .form-control:focus {
+            border-color: #14b8a6;
+            /* Change border color on focus */
+            outline: none;
+            /* Remove default outline */
+        }
+
+        .submit {
+            background-color: #14b8a6;
+            /* Background color for submit button */
+            color: white;
+            /* Text color for submit button */
+            font-size: 1.25rem;
+            /* Font size for submit button */
+            cursor: pointer;
+            /* Pointer cursor */
+            transition: background-color 0.3s;
+            /* Transition effect */
+        }
+
+        .submit:hover {
+            background-color: #0d9488;
+            /* Darker shade on hover */
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen justify-between">
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+    <main class="flex-grow bg-gray-100">
+        <header class="header-container p-6 space-y-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg">
+            <a href="javascript:history.back()" class="back-btn text-blue-500 hover:text-blue-700">&larr; Back</a>
+
+            <div class="title text-center">
+                <h1 class="text-3xl font-bold">About Me</h1>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img src="./image/myphoto.png" alt="My Photo"
+                    class="w-32 h-32 rounded-full border-2 border-gray-300 mb-4">
+                <div class="text-left max-w-lg">
+                    <p class="text-gray-700">
+                        Name: <strong>Deovolenty Myrchiang</strong><br><br>
+                        Date of Birth: <strong>03/05/1999</strong><br><br>
+                        Resident: <strong>India</strong><br><br>
+                        
+                        Studied at: <strong>North Eastern Hill University</strong><br><br>
+                        Currently Working: <strong>NESAC</strong><br><br>
+                        Village: <strong>Mynso, Meghalaya, India</strong><br><br>
+                        Phone Number: <strong><a href="tel:9774799893"
+                                class="text-blue-500 hover:underline">9774799893</a></strong><br><br>
+                        Email: <strong><a href="mailto:deovalentymyrchiang03@gmail.com"
+                                class="text-blue-500 hover:underline">deovalentymyrchiang03@gmail.com</a></strong><br><br>
+                        The main purpose of this website is to provide detailed information about the Town, bringing
+                        attention toward the Town, making them aware of the different tourist spots, facilities, and
+                        festivals available.
+                    </p>
+                </div>
+            </div>
+        </header>
+    </main>
+
+
+
+    <div id="footer"></div>
+    <script src="js/loadcomponents.js"></script>
+</body>
+
+</html>

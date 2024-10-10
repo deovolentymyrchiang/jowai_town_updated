@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jowai Town</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+
+  <style>
+      body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      width: 100%;
+      height: 70vh;
+      background-image: url("./image/Thadlaskein lake.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      position: relative;
+      color: white;
+      font-size: 4rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Back Button Styles */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #14b8a6;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 2;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #0d9488;
+    }
+
+    h4 {
+      position: relative;
+    }
+
+    h4::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background-color: #14b8a6;
+      bottom: -10px;
+      left: 0;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .animate {
+      transition: transform 0.3s ease-in-out, opacity 0.3s;
+    }
+
+    .animate:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen justify-between">
+  
+  <!-- Navbar Placeholder -->
+  <div id="navbar"></div>
+
+  <!-- Header Section -->
+  <header>
+    <a href="javascript:history.back()" class="back-btn">&larr; Back</a>
+    <h1>Welcome to Jowai, Meghalaya</h1>
+
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-4 py-8 sm:px-8 md:px-12 lg:px-16 bg-gray-50">
+    <h2 class="text-4xl font-bold text-center text-teal-700 mb-8 animate">Discover the Heart of Jaintia Hills</h2>
+
+    <!-- Census 2011 Link -->
+    <div class="mt-6 text-center">
+      <a class="btn hover:bg-teal-700 transition-colors duration-200" href="http://census2011.co.in/data/town/801545-jowai-meghalaya.html" target="_blank">
+        View Census 2011
+      </a>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">Overview</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+       Jowai, the exquisitely beautiful destination is located in the Jaintia Hills, the heart of Meghalaya. It is the district headquarters of the Jaintia Hills district and is largely populated by the Pnar tribe. Jowai is a picturesque town with the Myntdu river surrounding it on three sides and Bangladesh bordering it on the southern fringes. Placed on a plateau, Jowai is situated 1380 m above sea level. Its high altitude makes the climate pleasant and cool. The Jaintia Hills is mineral rich and there are several coal mines around Jowai. Thus the economy of the place thrives of coal mining.
+       <br>
+       <br>
+       Located at an altitude of 1380 meter, Jowai is a small town and the district headquarter of West Jaintia hill district of Meghalaya. The town and its surrounding area have been included in the tourism map only recently. Jowai is fast becoming a tourist hub for its unique scenic beauty, rich heritage, local people and their culture. Nature has also blessed Jowai with unique and mesmerising flora and fauna. The lakes of the town, natural beauty and the local culture and heritage make Jowai an attractive tourist destination. Jowai is also an important education and business hub of the area.
+      </p>
+    </section>
+
+    <!-- Tourist Places -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">Tourist Places In And Around Jowai</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        Jowai tourism consists of a visit to the Behdeimkhlam festival that is held in the second week of July. The Behdeimkhlam festival is a ritualistic expression of the Pnars tribal community. There are several other attractions that make Jowai tourism interesting such as the man-made Thadlaskein Lake, Ialong Park and the Jowai Presbyterian Church.
+        <br>
+      </p>
+    </section>
+
+    <!-- How to Reach -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">How To Reach Jowai</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        Jowai is 65 km from Shillong, the capital of Meghalaya. To reach Jowai, tourists can either book a tourist vehicle or board an inter-state bus that runs from the capital at frequent intervals. For travellers seeking air connectivity, there are direct flights from Kolkata to Umroi. However, the better option is to take a flight to the Guwahati airport
+      </p>
+    </section>
+
+    <!-- Best Time to Visit -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">Best Time To Visit Jowai</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        The winter months and the summer months are the ideal time to visit Jowai.
+
+
+      </p>
+    </section>
+
+    <!-- People -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">People</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        The population of the town is about 30,000 who mostly belong to the local Pnar tribe, there is also a substantial population of several other tribes. The Pnar tribes have a matriarchic society.
+In Jowai there are two popular festivals. One is ‘Chad Sukra’ festival held in April and May. This festival celebrates mental and physical well being through music and dance. The other festival is known as 'Behdeinkhlam’.
+      </p>
+    </section>
+
+    <!-- Local Weather -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">Local Weather</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        The weather of Jowai is pleasant during most of the year, it is neither too hot or neither too cold. March to May is a pleasant time to visit Jowai.
+      </p>
+    </section>
+
+    <!-- Nearby Places -->
+    <section class="mt-10 animate">
+      <h4 class="text-3xl font-semibold text-teal-700">Nearby Places</h4>
+      <p class="mt-4 text-gray-600 leading-relaxed">
+        One may also combine a tour of Shillong, Cherrapunjee, Dawki, Mawlynnong from Jowai as all these places are within short driving distance.
+        <br>
+        <br>
+        Shillong is 72 km and about 2-hour drive
+Cherrapunjee 104 km, about 3 hours
+Dawki 56 km, around 2 hours
+Mawlynnong 90 km, around 3 hours.
+      </p>
+    </section>
+
+    <!-- Back to Top -->
+    <div class="mt-10 text-center">
+      <a class="text-teal-600 hover:underline text-lg" href="#top">Back to top</a>
+    </div>
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer id="footer">
+
+  </footer>
+
+  <!-- Script for Dynamic Components -->
+  <script src="js/loadcomponents.js"></script>
+
+</body>
+
+</html>
